@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A334A75D23D73D7A008F8B86 /* cookingPan WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A334A75C23D73D7A008F8B86 /* cookingPan WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A334A76323D73D7A008F8B86 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A334A76123D73D7A008F8B86 /* Interface.storyboard */; };
+		A334A76523D73D7A008F8B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A334A76423D73D7A008F8B86 /* Assets.xcassets */; };
+		A334A76C23D73D7B008F8B86 /* cookingPan WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A334A76B23D73D7B008F8B86 /* cookingPan WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A334A77123D73D7B008F8B86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A334A77023D73D7B008F8B86 /* ContentView.swift */; };
+		A334A77323D73D7B008F8B86 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A334A77223D73D7B008F8B86 /* HostingController.swift */; };
+		A334A77523D73D7B008F8B86 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A334A77423D73D7B008F8B86 /* ExtensionDelegate.swift */; };
+		A334A77723D73D7B008F8B86 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A334A77623D73D7B008F8B86 /* NotificationController.swift */; };
+		A334A77923D73D7B008F8B86 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A334A77823D73D7B008F8B86 /* NotificationView.swift */; };
+		A334A77B23D73D7B008F8B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A334A77A23D73D7B008F8B86 /* Assets.xcassets */; };
+		A334A77E23D73D7B008F8B86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A334A77D23D73D7B008F8B86 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A334A75E23D73D7A008F8B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A334A75223D73D7A008F8B86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A334A75B23D73D7A008F8B86;
+			remoteInfo = "cookingPan WatchKit App";
+		};
+		A334A76D23D73D7B008F8B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A334A75223D73D7A008F8B86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A334A76A23D73D7B008F8B86;
+			remoteInfo = "cookingPan WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A334A78623D73D7B008F8B86 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A334A76C23D73D7B008F8B86 /* cookingPan WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A334A78A23D73D7B008F8B86 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A334A75D23D73D7A008F8B86 /* cookingPan WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A334A75823D73D7A008F8B86 /* cookingPan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cookingPan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A334A75C23D73D7A008F8B86 /* cookingPan WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cookingPan WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A334A76223D73D7A008F8B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A334A76423D73D7A008F8B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A334A76623D73D7A008F8B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A334A76B23D73D7B008F8B86 /* cookingPan WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "cookingPan WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A334A77023D73D7B008F8B86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A334A77223D73D7B008F8B86 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		A334A77423D73D7B008F8B86 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A334A77623D73D7B008F8B86 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A334A77823D73D7B008F8B86 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		A334A77A23D73D7B008F8B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A334A77D23D73D7B008F8B86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A334A77F23D73D7B008F8B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A334A78023D73D7B008F8B86 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A334A76823D73D7B008F8B86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A334A75123D73D7A008F8B86 = {
+			isa = PBXGroup;
+			children = (
+				A334A76023D73D7A008F8B86 /* cookingPan WatchKit App */,
+				A334A76F23D73D7B008F8B86 /* cookingPan WatchKit Extension */,
+				A334A75923D73D7A008F8B86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A334A75923D73D7A008F8B86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A334A75823D73D7A008F8B86 /* cookingPan.app */,
+				A334A75C23D73D7A008F8B86 /* cookingPan WatchKit App.app */,
+				A334A76B23D73D7B008F8B86 /* cookingPan WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A334A76023D73D7A008F8B86 /* cookingPan WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A334A76123D73D7A008F8B86 /* Interface.storyboard */,
+				A334A76423D73D7A008F8B86 /* Assets.xcassets */,
+				A334A76623D73D7A008F8B86 /* Info.plist */,
+			);
+			path = "cookingPan WatchKit App";
+			sourceTree = "<group>";
+		};
+		A334A76F23D73D7B008F8B86 /* cookingPan WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A334A77023D73D7B008F8B86 /* ContentView.swift */,
+				A334A77223D73D7B008F8B86 /* HostingController.swift */,
+				A334A77423D73D7B008F8B86 /* ExtensionDelegate.swift */,
+				A334A77623D73D7B008F8B86 /* NotificationController.swift */,
+				A334A77823D73D7B008F8B86 /* NotificationView.swift */,
+				A334A77A23D73D7B008F8B86 /* Assets.xcassets */,
+				A334A77F23D73D7B008F8B86 /* Info.plist */,
+				A334A78023D73D7B008F8B86 /* PushNotificationPayload.apns */,
+				A334A77C23D73D7B008F8B86 /* Preview Content */,
+			);
+			path = "cookingPan WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A334A77C23D73D7B008F8B86 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A334A77D23D73D7B008F8B86 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A334A75723D73D7A008F8B86 /* cookingPan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A334A78B23D73D7B008F8B86 /* Build configuration list for PBXNativeTarget "cookingPan" */;
+			buildPhases = (
+				A334A75623D73D7A008F8B86 /* Resources */,
+				A334A78A23D73D7B008F8B86 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A334A75F23D73D7A008F8B86 /* PBXTargetDependency */,
+			);
+			name = cookingPan;
+			productName = cookingPan;
+			productReference = A334A75823D73D7A008F8B86 /* cookingPan.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		A334A75B23D73D7A008F8B86 /* cookingPan WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A334A78723D73D7B008F8B86 /* Build configuration list for PBXNativeTarget "cookingPan WatchKit App" */;
+			buildPhases = (
+				A334A75A23D73D7A008F8B86 /* Resources */,
+				A334A78623D73D7B008F8B86 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A334A76E23D73D7B008F8B86 /* PBXTargetDependency */,
+			);
+			name = "cookingPan WatchKit App";
+			productName = "cookingPan WatchKit App";
+			productReference = A334A75C23D73D7A008F8B86 /* cookingPan WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A334A76A23D73D7B008F8B86 /* cookingPan WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A334A78323D73D7B008F8B86 /* Build configuration list for PBXNativeTarget "cookingPan WatchKit Extension" */;
+			buildPhases = (
+				A334A76723D73D7B008F8B86 /* Sources */,
+				A334A76823D73D7B008F8B86 /* Frameworks */,
+				A334A76923D73D7B008F8B86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cookingPan WatchKit Extension";
+			productName = "cookingPan WatchKit Extension";
+			productReference = A334A76B23D73D7B008F8B86 /* cookingPan WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A334A75223D73D7A008F8B86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Vincenzo Manno";
+				TargetAttributes = {
+					A334A75723D73D7A008F8B86 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					A334A75B23D73D7A008F8B86 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					A334A76A23D73D7B008F8B86 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A334A75523D73D7A008F8B86 /* Build configuration list for PBXProject "cookingPan" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A334A75123D73D7A008F8B86;
+			productRefGroup = A334A75923D73D7A008F8B86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A334A75723D73D7A008F8B86 /* cookingPan */,
+				A334A75B23D73D7A008F8B86 /* cookingPan WatchKit App */,
+				A334A76A23D73D7B008F8B86 /* cookingPan WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A334A75623D73D7A008F8B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A334A75A23D73D7A008F8B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A334A76523D73D7A008F8B86 /* Assets.xcassets in Resources */,
+				A334A76323D73D7A008F8B86 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A334A76923D73D7B008F8B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A334A77E23D73D7B008F8B86 /* Preview Assets.xcassets in Resources */,
+				A334A77B23D73D7B008F8B86 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A334A76723D73D7B008F8B86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A334A77323D73D7B008F8B86 /* HostingController.swift in Sources */,
+				A334A77123D73D7B008F8B86 /* ContentView.swift in Sources */,
+				A334A77723D73D7B008F8B86 /* NotificationController.swift in Sources */,
+				A334A77523D73D7B008F8B86 /* ExtensionDelegate.swift in Sources */,
+				A334A77923D73D7B008F8B86 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A334A75F23D73D7A008F8B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A334A75B23D73D7A008F8B86 /* cookingPan WatchKit App */;
+			targetProxy = A334A75E23D73D7A008F8B86 /* PBXContainerItemProxy */;
+		};
+		A334A76E23D73D7B008F8B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A334A76A23D73D7B008F8B86 /* cookingPan WatchKit Extension */;
+			targetProxy = A334A76D23D73D7B008F8B86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A334A76123D73D7A008F8B86 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A334A76223D73D7A008F8B86 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A334A78123D73D7B008F8B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A334A78223D73D7B008F8B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A334A78423D73D7B008F8B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"cookingPan WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = PGMW8F7Q67;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "cookingPan WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ince.cookingPan.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		A334A78523D73D7B008F8B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"cookingPan WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = PGMW8F7Q67;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "cookingPan WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ince.cookingPan.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		A334A78823D73D7B008F8B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGMW8F7Q67;
+				IBSC_MODULE = cookingPan_WatchKit_Extension;
+				INFOPLIST_FILE = "cookingPan WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Ince.cookingPan.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		A334A78923D73D7B008F8B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGMW8F7Q67;
+				IBSC_MODULE = cookingPan_WatchKit_Extension;
+				INFOPLIST_FILE = "cookingPan WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Ince.cookingPan.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		A334A78C23D73D7B008F8B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PGMW8F7Q67;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ince.cookingPan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A334A78D23D73D7B008F8B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PGMW8F7Q67;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ince.cookingPan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A334A75523D73D7A008F8B86 /* Build configuration list for PBXProject "cookingPan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A334A78123D73D7B008F8B86 /* Debug */,
+				A334A78223D73D7B008F8B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A334A78323D73D7B008F8B86 /* Build configuration list for PBXNativeTarget "cookingPan WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A334A78423D73D7B008F8B86 /* Debug */,
+				A334A78523D73D7B008F8B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A334A78723D73D7B008F8B86 /* Build configuration list for PBXNativeTarget "cookingPan WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A334A78823D73D7B008F8B86 /* Debug */,
+				A334A78923D73D7B008F8B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A334A78B23D73D7B008F8B86 /* Build configuration list for PBXNativeTarget "cookingPan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A334A78C23D73D7B008F8B86 /* Debug */,
+				A334A78D23D73D7B008F8B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A334A75223D73D7A008F8B86 /* Project object */;
+}
