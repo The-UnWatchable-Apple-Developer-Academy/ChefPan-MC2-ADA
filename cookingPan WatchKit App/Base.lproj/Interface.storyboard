@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14815" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NBu-mt-KyX">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NBu-mt-KyX" pageOrientation="vertical">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14770"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14621"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
         <!--Hosting Controller-->
         <scene sceneID="RUd-og-cv4">
             <objects>
-                <hostingController id="NBu-mt-KyX" customClass="HostingController" 
-                customModuleProvider="target"/>                
+                <hostingController id="NBu-mt-KyX" customClass="HostingController" customModule="cookingPan_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="187" y="141"/>
+            <point key="canvasLocation" x="187" y="145"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -30,13 +29,223 @@
             </objects>
             <point key="canvasLocation" x="187" y="462"/>
         </scene>
-        <!--Notification Hosting Controller-->
+        <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController"
-                customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="cookingPan_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="488" y="462"/>
         </scene>
+        <!--Main Course-->
+        <scene sceneID="MPh-Oj-N9s">
+            <objects>
+                <controller identifier="mainCourse" title="Main Course" id="bQ4-14-GS8" customClass="MainCourseController" customModule="cookingPan_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button alignment="left" id="Ggp-2L-Bmv">
+                            <group key="contentGroup" width="1" height="50" alignment="left" layout="vertical" id="WJh-ig-NUQ">
+                                <items>
+                                    <label width="141" alignment="left" text="Gnocchi di Patate" textAlignment="right" id="uFM-o9-28h">
+                                        <fontDescription key="font" type="system" pointSize="17"/>
+                                    </label>
+                                    <imageView width="100" height="17" alignment="right" image="2stars" id="WW9-AK-b4x"/>
+                                </items>
+                                <color key="backgroundColor" red="0.13334026930000001" green="0.13327768449999999" blue="0.13725554940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </group>
+                            <connections>
+                                <action selector="onClickRecipe1" destination="bQ4-14-GS8" id="JRd-9I-vuV"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="I9p-eh-JxB">
+                            <group key="contentGroup" width="1" height="50" alignment="left" layout="vertical" id="bQh-aU-Qdo">
+                                <items>
+                                    <label width="86" alignment="left" text="Carbonara" textAlignment="right" id="dHl-bC-xa1">
+                                        <fontDescription key="font" type="system" pointSize="17"/>
+                                    </label>
+                                    <imageView width="100" height="17" alignment="right" image="1star" id="BjU-bn-B9o"/>
+                                </items>
+                                <color key="backgroundColor" red="0.13334026930000001" green="0.13327768449999999" blue="0.13725554940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </group>
+                            <connections>
+                                <action selector="onClickRecipe2" destination="bQ4-14-GS8" id="S1t-ap-L0d"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="yE7-A0-KBy">
+                            <group key="contentGroup" width="1" height="50" alignment="left" layout="vertical" id="Jr1-fc-wEf">
+                                <items>
+                                    <label width="70" alignment="left" text="Lasagna" textAlignment="right" id="UFn-YE-zeM">
+                                        <fontDescription key="font" type="system" pointSize="17"/>
+                                    </label>
+                                    <imageView width="100" height="17" alignment="right" image="3stars" id="nke-JV-78P"/>
+                                </items>
+                                <color key="backgroundColor" red="0.13334026930000001" green="0.13327768449999999" blue="0.13725554940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </group>
+                            <connections>
+                                <action selector="onClickRecipe3" destination="bQ4-14-GS8" id="IU2-GO-BCM"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="wJP-xR-7Cr">
+                            <group key="contentGroup" width="1" height="50" alignment="left" layout="vertical" id="iiT-bh-2uq">
+                                <items>
+                                    <label width="149" alignment="left" text="Riso allo zafferano" textAlignment="right" id="8q0-Xl-PGB">
+                                        <fontDescription key="font" type="system" pointSize="17"/>
+                                    </label>
+                                    <imageView width="100" height="17" alignment="right" image="4stars" id="e3s-hm-jbg"/>
+                                </items>
+                                <color key="backgroundColor" red="0.13334026930000001" green="0.13327768449999999" blue="0.13725554940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </group>
+                            <connections>
+                                <action selector="onClickRecipe4" destination="bQ4-14-GS8" id="pPY-qZ-Cvz"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="7wL-e8-70c">
+                            <group key="contentGroup" width="1" height="50" alignment="left" layout="vertical" id="XLs-tJ-4TS">
+                                <items>
+                                    <label width="152" alignment="left" text="Spaghetti e Vongole" textAlignment="right" id="8OB-q9-HNM">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </label>
+                                    <imageView width="100" height="17" alignment="right" image="5stars" id="3aC-WE-RnF"/>
+                                </items>
+                                <color key="backgroundColor" red="0.13334026930000001" green="0.13327768449999999" blue="0.13725554940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </group>
+                            <connections>
+                                <action selector="onClickRecipe5" destination="bQ4-14-GS8" id="rJt-v8-mCB"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="488" y="88"/>
+        </scene>
+        <!--recipe55555-->
+        <scene sceneID="jxy-l2-XfW">
+            <objects>
+                <controller identifier="recipe55555" id="NHV-az-zYm" customClass="InterfaceController" customModule="cookingPan_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="177" alignment="left" layout="vertical" id="l2e-XT-cu1">
+                            <items>
+                                <group width="80" height="80" alignment="center" id="BTm-CE-82T">
+                                    <items>
+                                        <button width="100" height="100" alignment="left" backgroundImage="Play" id="ISu-Ny-isB">
+                                            <variation key="device=watch38mm" height="81" width="90"/>
+                                            <variation key="device=watch42mm" height="80" width="80"/>
+                                            <connections>
+                                                <action selector="playButtonTapped" destination="NHV-az-zYm" id="3gk-Jy-T43"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="170" alignment="center" id="pG7-Ms-M2T">
+                                    <items>
+                                        <button width="100" height="100" alignment="right" backgroundImage="Forward10" id="yuc-f5-Mws">
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <variation key="device=watch38mm" height="40" width="40"/>
+                                            <variation key="device=watch42mm" height="65" width="65"/>
+                                        </button>
+                                        <button width="100" height="100" alignment="left" backgroundImage="Back10" id="s4v-mc-xKv">
+                                            <variation key="device=watch38mm" height="40" width="40"/>
+                                            <variation key="device=watch42mm" height="65" width="65"/>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                            <variation key="device=watch38mm" spacing="15"/>
+                            <variation key="device=watch42mm" spacing="24"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="playButton" destination="ISu-Ny-isB" id="zat-RF-P4I"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1726" y="-35"/>
+        </scene>
+        <!--list-->
+        <scene sceneID="XPh-41-Aw5">
+            <objects>
+                <controller identifier="list" id="Y3p-cy-v5u" customClass="ListInterfaceController" customModule="cookingPan_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="XfG-AV-P4v">
+                            <items>
+                                <label alignment="left" text="Recipe List:" id="DK4-d1-Igu">
+                                    <color key="textColor" red="0.95606666799999995" green="0.86706191300000002" blue="0.39594346279999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </label>
+                                <label alignment="left" text="• Eggs" id="9Sz-2c-mMW"/>
+                                <label alignment="left" text="• Guanciale" id="mjM-4N-vLd"/>
+                                <label alignment="left" text="• Pecorino Cheese" id="6iJ-LR-dPO"/>
+                                <label alignment="left" text="• Salt and pepper" id="Zmv-is-hl0"/>
+                            </items>
+                        </group>
+                        <group alignment="left" verticalAlignment="bottom" layout="vertical" id="ffK-qE-RkV">
+                            <items>
+                                <button alignment="center" verticalAlignment="bottom" id="JJ3-co-Fy3">
+                                    <group key="contentGroup" width="1" alignment="left" id="LwX-TZ-JVh">
+                                        <items>
+                                            <imageView width="40" height="40" alignment="center" verticalAlignment="bottom" image="cappello" id="1qd-zq-GRC"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <action selector="startRecipe" destination="Y3p-cy-v5u" id="iPX-mb-1Zy"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="703" y="80"/>
+        </scene>
+        <!--player-->
+        <scene sceneID="aga-hF-ZBZ">
+            <objects>
+                <controller identifier="player" id="NGP-M8-bko" customClass="Player" customModule="cookingPan_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group height="52" alignment="center" verticalAlignment="bottom" id="dmb-1e-77N">
+                            <items>
+                                <button alignment="left" verticalAlignment="center" id="V6V-8g-6sg">
+                                    <group key="contentGroup" width="40" height="40" alignment="left" backgroundImage="Back10" id="iJN-lV-aEX"/>
+                                    <connections>
+                                        <action selector="back10" destination="NGP-M8-bko" id="fHO-OE-FBB"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" verticalAlignment="center" id="27c-Nr-h8c">
+                                    <group key="contentGroup" width="55" height="55" alignment="left" backgroundImage="Play" layout="vertical" id="8r0-GJ-DJi"/>
+                                    <connections>
+                                        <action selector="playbutton" destination="NGP-M8-bko" id="knG-6l-P71"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" verticalAlignment="center" id="Eh6-ng-zF1">
+                                    <group key="contentGroup" width="40" height="40" alignment="left" backgroundImage="Forward10" animationDuration="10" radius="10" id="wKP-6F-Zc8"/>
+                                    <connections>
+                                        <action selector="forward10" destination="NGP-M8-bko" id="FXg-xi-irV"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="100" height="90" alignment="center" verticalAlignment="center" layout="vertical" id="Rqm-JO-jU4">
+                            <items>
+                                <group width="60" height="60" alignment="center" verticalAlignment="center" backgroundImage="pentola" id="PP6-xg-lAc"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="myPlayButton" destination="8r0-GJ-DJi" id="yuo-hM-TL8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="964" y="107"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="1star" width="500" height="82"/>
+        <image name="2stars" width="500" height="82"/>
+        <image name="3stars" width="500" height="82"/>
+        <image name="4stars" width="500" height="82"/>
+        <image name="5stars" width="500" height="82"/>
+        <image name="Back10" width="500" height="500"/>
+        <image name="Forward10" width="500" height="500"/>
+        <image name="Play" width="500" height="500"/>
+        <image name="cappello" width="292" height="292"/>
+        <image name="pentola" width="358" height="358"/>
+    </resources>
+    <color key="tintColor" red="0.95606666799999995" green="0.86706191300000002" blue="0.39594346279999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
